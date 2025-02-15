@@ -40,7 +40,7 @@ useEffect (() =>{
       setTimeout(()=>{
           const id1 = opened[0];
           const id2 = opened[1];
-          if(nums[id1] === nums[id2] && id1!=id2){
+          if(nums[id1] === nums[id2]){
             setSolve((prev) => [...prev, nums[id1]])
             setOpened([])
             }else{
@@ -83,12 +83,11 @@ const getClassName = (num, index)=>{
 
       {stage === 'win' && <div>
         <br />
-        <h2 className='text-danger'>You won the game !! WOW</h2>
+        <h2 className='text-danger'>You won the game, WOW !!</h2>
         <h4>Kya ree l*uda mila jit krr!! hnn konse color ka mila</h4>
         <img src="../images/samay.jpg" alt="error" /> <br /> 
         <button onClick={handleStart}>Fir Khelega ☠️</button>
         </div>}
-
     </div>
   </>
     )
