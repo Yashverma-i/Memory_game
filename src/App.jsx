@@ -40,7 +40,7 @@ useEffect (() =>{
       setTimeout(()=>{
           const id1 = opened[0];
           const id2 = opened[1];
-          if(nums[id1] === nums[id2]){
+          if(nums[id1] === nums[id2] && id1!=id2){
             setSolve((prev) => [...prev, nums[id1]])
             setOpened([])
             }else{
