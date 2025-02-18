@@ -84,9 +84,8 @@ const getClassName = (num, index)=>{
       {stage === 'win' && <div>
         <br />
         <h2 className='text-danger'>You won the game, WOW !!</h2>
-        <h4>Kya ree l*uda mila jit krr!! hnn konse color ka mila</h4>
         <img src="../images/samay.jpg" alt="error" /> <br /> 
-        <button onClick={handleStart}>Fir Khelega ☠️</button>
+        <button onClick={handleStart}> Fir Khelega ☠️</button>
         </div>}
     </div>
   </>
